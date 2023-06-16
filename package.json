@@ -1,0 +1,20 @@
+{
+  "name": "postmessage-experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run webapp\" \"npm run token\"",
+    "token": "node token/server.js",
+    "webapp": "node webapp/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
